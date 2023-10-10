@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- Bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-md-12 py-3">
+          <h2 class="text-center text-primary">
+            Bootstrap Button Group classes
+          </h2>
+        </div>
+        <div class="col-md-12 py-3">
+          <!-- Btn group classes -->
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary">Click 1</button>
+            <button type="button" class="btn btn-primary">Click 2</button>
+            <button type="button" class="btn btn-primary">Click 3</button>
+          </div>
+        </div>
+        <!-- sizes of button group -->
+        <div class="col-md-12 py-3">
+          <div class="btn-group btn-group-lg">
+            <button type="button" class="btn btn-primary">Click 1</button>
+            <button type="button" class="btn btn-primary">Click 2</button>
+            <button type="button" class="btn btn-primary">Click 3</button>
+          </div>
+          <div class="btn-group mt-3">
+            <button type="button" class="btn btn-primary">Click 1</button>
+            <button type="button" class="btn btn-primary">Click 2</button>
+            <button type="button" class="btn btn-primary">Click 3</button>
+          </div>
+          <div class="btn-group btn-group-sm mt-3">
+            <button type="button" class="btn btn-primary">Click 1</button>
+            <button type="button" class="btn btn-primary">Click 2</button>
+            <button type="button" class="btn btn-primary">Click 3</button>
+          </div>
+        </div>
+        <!-- btn-toolbar -->
+        <div class="col-md-12 mt-3">
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Click 1</button>
+              <button type="button" class="btn btn-primary">Click 2</button>
+              <button type="button" class="btn btn-primary">Click 3</button>
+            </div>
+            <div class="btn-group mx-4">
+              <button type="button" class="btn btn-primary">Click 1</button>
+              <button type="button" class="btn btn-primary">Click 2</button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Click 1</button>
+            </div>
+          </div>
+        </div>
+        <!-- outline grouping -->
+        <div class="col-md-12 mt-3">
+          <div class="btn-toolbar">
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-primary">
+                Click 1
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Click 2
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Click 3
+              </button>
+            </div>
+            <div class="btn-group mx-4">
+              <button type="button" class="btn btn-outline-primary">
+                Click 1
+              </button>
+              <button type="button" class="btn btn-outline-primary">
+                Click 2
+              </button>
+            </div>
+            <div class="btn-group">
+              <button type="button" class="btn btn-outline-primary">
+                Click 1
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- check-box -->
+        <div class="col-md-12 mt-3">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic checkbox toggle button group"
+          >
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck1"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="btncheck1"
+              >Checkbox 1</label
+            >
+
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck2"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="btncheck2"
+              >Checkbox 2</label
+            >
+
+            <input
+              type="checkbox"
+              class="btn-check"
+              id="btncheck3"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-primary" for="btncheck3"
+              >Checkbox 3</label
+            >
+          </div>
+        </div>
+        <!-- radio  -->
+        <div class="col-md-12 mt-3">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Basic radio toggle button group"
+          >
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio1"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn btn-outline-danger" for="btnradio1"
+              >Radio 1</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio2"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-warning" for="btnradio2"
+              >Radio 2</label
+            >
+
+            <input
+              type="radio"
+              class="btn-check"
+              name="btnradio"
+              id="btnradio3"
+              autocomplete="off"
+            />
+            <label class="btn btn-outline-success" for="btnradio3"
+              >Radio 3</label
+            >
+          </div>
+        </div>
+        <!-- nesting -->
+        <div class="col-md-12 mt-3">
+          <div
+            class="btn-group"
+            role="group"
+            aria-label="Button group with nested dropdown"
+          >
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+
+            <div class="btn-group" role="group">
+              <button
+                id="btnGroupDrop1"
+                type="button"
+                class="btn btn-primary dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 mt-3">
+            <div class="btn-group-vertical">
+                <button class="btn btn-primary" type="button">Click 1</button>
+                <button class="btn btn-primary" type="button">Click 2</button>
+                <button class="btn btn-primary" type="button">Click 3</button>
+                <button class="btn btn-primary" type="button">Click 4</button>
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- bootstrap javascript cdn -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
