@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap</title>
+    <!-- Bootstrap css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row p-4">
+        <div class="col-md-12">
+          <h2 class="text-center">Bootstrap List Group classes</h2>
+        </div>
+        <div class="col-md-12 mt-3">
+          <ul class="list-group">
+            <li class="list-group-item">item 1</li>
+            <li class="list-group-item">item 2</li>
+            <li class="list-group-item">item 3</li>
+          </ul>
+        </div>
+        <!-- to remove border in list -->
+        <div class="col-md-12 mt-3">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">item 1</li>
+            <li class="list-group-item">item 2</li>
+            <li class="list-group-item">item 3</li>
+          </ul>
+        </div>
+        <!-- active list item -->
+        <div class="col-md-12 mt-3">
+          <ul class="list-group">
+            <li class="list-group-item active">item 1</li>
+            <li class="list-group-item">item 2</li>
+            <li class="list-group-item">item 3</li>
+          </ul>
+        </div>
+        <!-- disabled list item -->
+        <div class="col-md-12 mt-3">
+          <ul class="list-group">
+            <li class="list-group-item">item 1</li>
+            <li class="list-group-item disabled">item 2</li>
+            <li class="list-group-item">item 3</li>
+          </ul>
+        </div>
+        <!-- links through which we can route -->
+        <div class="col-md-12 mt-3">
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action"
+              >A second link item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >A third link item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >A fourth link item</a
+            >
+            <a
+              href="#"
+              class="list-group-item list-group-item-action disabled"
+              tabindex="-1"
+              aria-disabled="true"
+              >A disabled link item</a
+            >
+          </div>
+        </div>
+        <!-- buttons -->
+        <div class="col-md-12 mt-3">
+          <div class="list-group">
+            <button
+              type="button"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              The current button
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+            >
+              A second item
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+            >
+              A third button item
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+            >
+              A fourth button item
+            </button>
+            <button
+              type="button"
+              class="list-group-item list-group-item-action"
+              disabled
+            >
+              A disabled button item
+            </button>
+          </div>
+        </div>
+        <!-- list with numbers -->
+        <div class="col-md-12 mt-3">
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Cras justo odio</li>
+            <li class="list-group-item">Cras justo odio</li>
+          </ol>
+        </div>
+        <!-- horizontal list -->
+        <div class="col-md-12 mt-3">
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+        </div>
+        <!-- bg-colors for list -->
+        <div class="col-md-12 mt-3">
+          <ul class="list-group">
+            <li class="list-group-item">A simple default list group item</li>
+
+            <li class="list-group-item list-group-item-primary">
+              A simple primary list group item
+            </li>
+            <li class="list-group-item list-group-item-secondary">
+              A simple secondary list group item
+            </li>
+            <li class="list-group-item list-group-item-success">
+              A simple success list group item
+            </li>
+            <li class="list-group-item list-group-item-danger">
+              A simple danger list group item
+            </li>
+            <li class="list-group-item list-group-item-warning">
+              A simple warning list group item
+            </li>
+            <li class="list-group-item list-group-item-info">
+              A simple info list group item
+            </li>
+            <li class="list-group-item list-group-item-light">
+              A simple light list group item
+            </li>
+            <li class="list-group-item list-group-item-dark">
+              A simple dark list group item
+            </li>
+          </ul>
+        </div>
+        <!-- custom list group -->
+        <div class="col-md-12 mt-3">
+          <div class="list-group">
+            <a href="/" class="list-group-item list-group-item-action list-group-item-primary">
+              <div class="d-flex justify-content-between  ">
+                <h5 class="text-dark">List group item heading</h5>
+                <small class="text-secondary">3 days ago</small>
+              </div>
+              <p class="mb-1" >Some placeholder content in a paragraph.</p>
+              <small>And some small print.</small>
+            </a>
+          </div>
+        </div>
+        <!-- checkbox list -->
+        <div class="col-md-12 mt-3">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              First checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Second checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Third checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Fourth checkbox
+            </li>
+            <li class="list-group-item">
+              <input class="form-check-input me-1" type="checkbox">
+              Fifth checkbox
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
